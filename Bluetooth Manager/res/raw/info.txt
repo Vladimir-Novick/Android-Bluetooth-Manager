@@ -1,0 +1,3 @@
+Bluetooth manager tool to allow you to setup and configure relationships between Bluetooth devices and your android device. 
+<br>
+Supports all bulid in bluetooth settings functionality.

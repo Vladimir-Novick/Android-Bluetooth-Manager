@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     android:background="@drawable/prompt_edit_device_name_bg"
+    android:padding="10dp" >
+    
+                <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="5dp"
+    android:background="@android:color/darker_gray"/>
+    
+      <TextView
+        android:id="@+id/textDeviceNameCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:text="@string/OriginalNameCaption"
+     	    android:textStyle="italic"
+		    android:textColor="#cccccc"
+            android:textSize="16dip"
+        />  
+    
+ 
+            <TextView
+        android:id="@+id/textOriginameDeviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Original name"
+        android:textColor="#ffffff"
+            android:textSize="18dip"
+            android:layout_marginLeft="15dp"
+        />  
+        
+                  <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="5dp"
+    android:background="@android:color/darker_gray"/>
+    
+      <TextView
+        android:id="@+id/textDeviceAddressCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:text="@string/deviceAddressCaption"
+     	    android:textStyle="italic"
+		    android:textColor="#cccccc"
+            android:textSize="16dip"
+        />  
+    
+ 
+            <TextView
+        android:id="@+id/textDeviceAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textColor="#ffffff"
+            android:textSize="18dip"
+            android:layout_marginLeft="15dp"
+        />            
+      
+            <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+    android:background="@android:color/darker_gray"/>
+            
+            
+    <TextView
+        android:id="@+id/textNewDeviceNameCamption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/NewDeviceNameCaption"
+        		    android:textStyle="italic"
+		    android:textColor="#cccccc"
+            android:textSize="16dp"
+        />
+ 
+    <EditText
+        android:id="@+id/editTextDialogDeviceNameInput"
+         android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+ 
+        <requestFocus />
+ 
+    </EditText>
+ 
+</LinearLayout>

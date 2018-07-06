@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+                 <LinearLayout
+               android:id="@+id/operation_line"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="horizontal"
+                                          android:background="@drawable/background_line"
+                                          
+                                            >
+                  
+                                                         <ImageView
+            android:id="@+id/unselect_item"
+android:layout_width="wrap_content"  
+  android:layout_height="wrap_content"  
+  android:adjustViewBounds="true"  
+  android:gravity="right"
+    android:layout_marginTop="3dp"
+  android:layout_marginBottom="3dp"
+       android:layout_gravity="center_vertical|left"
+  android:layout_marginLeft="3dp" 
+  android:layout_marginRight="4dp"
+    android:scaleType="fitCenter"  
+    android:onClick="clickedUnselectedItems"
+            android:src="@drawable/selected_ok" />                       
+                  
+                  
+                                            <TextView
+        android:id="@+id/selected_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1234"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center_vertical"
+
+         android:textSize="15sp"
+          android:textColor="#b0bac3"
+         />    
+        
+                                                                                        <TextView
+        android:id="@+id/selected_count_text"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="@string/selected_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center_vertical"
+
+         android:textSize="15sp"
+          android:textColor="#b0bac3"
+         /> 
+                                            
+                   
+                                                         <ImageView
+            android:id="@+id/delete_selected_item"
+android:layout_width="wrap_content"  
+  android:layout_height="wrap_content"  
+  android:adjustViewBounds="true"  
+  android:gravity="right"
+    android:layout_marginTop="3dp"
+  android:layout_marginBottom="3dp"
+       android:layout_gravity="center_vertical|right"
+  android:layout_marginLeft="8dp" 
+  android:layout_marginRight="12dp"
+    android:scaleType="fitCenter"  
+    android:onClick="clickedDeleteDevices"
+            android:src="@drawable/delete_item" />
+
+                                                         <ImageView
+                                                             android:id="@+id/ImageViewReload01"
+                                                             android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content"
+                                                             android:layout_marginBottom="3dp"
+                                                             android:layout_marginLeft="8dp"
+                                                             android:layout_marginRight="8dp"
+                                                             android:layout_marginTop="3dp"
+                                                             android:adjustViewBounds="true"
+                                                             android:gravity="right"
+                                                             android:onClick="clickedReload"
+                                                             android:scaleType="fitCenter"
+                                                             android:src="@drawable/reload" />
+                                            
+                  </LinearLayout>
+    
+    
+          <LinearLayout
+               android:id="@+id/user_detail_line"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="horizontal"
+                                          android:background="@drawable/background_line"
+                                          
+                                            >
+                                            
+              
+           <ImageView
+            android:id="@+id/details_imagePointer"
+android:layout_width="wrap_content"  
+  android:layout_height="wrap_content"  
+  android:adjustViewBounds="true"  
+  android:gravity="center_vertical"
+       android:layout_gravity="center_vertical"
+  android:layout_marginLeft="3dp" 
+  android:layout_marginRight="4dp"
+  android:maxWidth="32dp"
+  android:maxHeight="32dp"
+    android:scaleType="fitCenter"  
+            android:src="@drawable/avatar" />           
+              
+           
+                     <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="vertical"
+                                          android:layout_weight="1"
+                                            >
+                                            
+                          <TextView
+        android:id="@+id/main_title_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paired_devices_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp"
+
+         android:textSize="14sp"
+          android:textColor="#b0bac3"
+         />    
+                
+              
+                     
+    
+                     </LinearLayout>      
+                     
+                                                         <ImageView
+            android:id="@+id/add_new_item"
+android:layout_width="wrap_content"  
+  android:layout_height="wrap_content"  
+  android:adjustViewBounds="true"  
+  android:gravity="right"
+    android:layout_marginTop="3dp"
+  android:layout_marginBottom="3dp"
+       android:layout_gravity="center_vertical|right"
+  android:layout_marginLeft="8dp" 
+  android:layout_marginRight="12dp"
+    android:scaleType="fitCenter"  
+    android:onClick="clickedNewDevice"
+            android:src="@drawable/add_new" />                     
+                     
+                 <ImageView
+            android:id="@+id/reload_items"
+android:layout_width="wrap_content"  
+  android:layout_height="wrap_content"  
+  android:adjustViewBounds="true" 
+  android:onClick="clickedReload1" 
+  android:gravity="right"
+       android:layout_gravity="center_vertical|right"
+  android:layout_marginLeft="8dp" 
+  android:layout_marginRight="8dp"
+  android:layout_marginTop="3dp"
+  android:layout_marginBottom="3dp"
+    android:scaleType="fitCenter"  
+
+            android:src="@drawable/reload" /> 
+                     
+                     
+                                            </LinearLayout>
+
+          <ListView
+              android:id="@+id/paired_devices"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:background="@drawable/main_background_line"
+              android:cacheColorHint="@android:color/transparent"
+              android:clickable="false"
+              android:divider="@drawable/list_divider"
+              android:dividerHeight="1px"
+              android:listSelector="@android:color/transparent"
+              android:longClickable="true"
+              android:stackFromBottom="true"
+              android:transcriptMode="alwaysScroll" >
+          </ListView>
+
+<LinearLayout
+               android:id="@+id/bottom_line"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="horizontal"
+                                          android:background="@drawable/background_line_bottom"
+                                          
+                                            >           
+                               <ImageView
+            android:id="@+id/discovarable_items"
+android:layout_width="wrap_content"  
+  android:layout_height="wrap_content"  
+  android:adjustViewBounds="true" 
+  android:onClick="clickedDiscoverable" 
+  android:gravity="right"
+       android:layout_gravity="center_vertical|right"
+  android:layout_marginLeft="8dp" 
+  android:layout_marginRight="8dp"
+  android:layout_marginTop="3dp"
+  android:layout_marginBottom="3dp"
+    android:scaleType="fitCenter"  
+
+            android:src="@drawable/discoverable" /> 
+           
+                     <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="vertical"
+                                          android:layout_weight="1"
+                                            >
+                                            
+                          <TextView
+        android:id="@+id/discovarable_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discovarable_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="1dp"
+        android:onClick="clickedDiscoverable" 
+         android:textSize="15dp"
+          android:textColor="#d8dfd2"
+         />    
+                
+              
+                     
+    
+                     </LinearLayout> 
+                     
+                                 <ImageView
+            android:id="@+id/id_config"
+android:layout_width="wrap_content"  
+  android:layout_height="wrap_content"  
+  android:adjustViewBounds="true" 
+  android:onClick="clickedConfig" 
+  android:gravity="right"
+       android:layout_gravity="center_vertical|right"
+  android:layout_marginLeft="18dp" 
+  android:layout_marginRight="12dp"
+  android:layout_marginTop="3dp"
+  android:layout_marginBottom="3dp"
+    android:scaleType="fitCenter"  
+
+            android:src="@drawable/config" />                   
+                     
+                     
+                               <ImageView
+            android:id="@+id/help_items"
+android:layout_width="wrap_content"  
+  android:layout_height="wrap_content"  
+  android:adjustViewBounds="true" 
+  android:onClick="clickedHelp" 
+  android:gravity="right"
+       android:layout_gravity="center_vertical|right"
+  android:layout_marginLeft="8dp" 
+  android:layout_marginRight="8dp"
+  android:layout_marginTop="3dp"
+  android:layout_marginBottom="3dp"
+    android:scaleType="fitCenter"  
+
+            android:src="@drawable/ic_action_help" /> 
+                     
+                     
+                                            </LinearLayout>
+
+
+
+</LinearLayout>

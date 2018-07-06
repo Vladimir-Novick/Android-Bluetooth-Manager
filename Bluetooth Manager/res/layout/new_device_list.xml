@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+                 
+    
+    
+          <LinearLayout
+               android:id="@+id/user_detail_line"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="horizontal"
+                                          android:background="@drawable/background_line_select"
+                                          
+                                            >
+                                            
+              
+           <ImageView
+            android:id="@+id/details_imagePointer"
+android:layout_width="wrap_content"  
+  android:layout_height="wrap_content"  
+  android:adjustViewBounds="true"  
+  android:gravity="center_vertical"
+       android:layout_gravity="center_vertical"
+  android:layout_marginLeft="3dp" 
+  android:layout_marginRight="4dp"
+  android:maxWidth="32dp"
+  android:maxHeight="32dp"
+    android:scaleType="fitCenter"  
+            android:src="@drawable/select_avatar" />           
+              
+           
+                     <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="vertical"
+                                          android:layout_weight="1"
+                                            >
+                                            
+                          <TextView
+        android:id="@+id/user_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_devices_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp"
+
+         android:textSize="16sp"
+          android:textColor="#b0bac3"
+         />    
+                
+              
+                     
+    
+                     </LinearLayout>                     
+                     
+                 <ImageView
+            android:id="@+id/reload_items"
+android:layout_width="wrap_content"  
+  android:layout_height="wrap_content"  
+  android:adjustViewBounds="true" 
+  android:onClick="clickedReload1" 
+  android:gravity="right"
+       android:layout_gravity="center_vertical|right"
+  android:layout_marginLeft="8dp" 
+  android:layout_marginRight="8dp"
+  android:layout_marginTop="3dp"
+  android:layout_marginBottom="3dp"
+    android:scaleType="fitCenter"  
+
+            android:src="@drawable/reload" /> 
+                     
+                     
+                                            </LinearLayout>
+          <ListView android:layout_width="match_parent" android:id="@+id/paired_devices" android:layout_height="wrap_content" android:layout_weight="1" android:background="@drawable/main_background_line" android:cacheColorHint="@android:color/transparent" android:clickable="false" android:divider="@drawable/list_divider" android:dividerHeight="1px" android:listSelector="@android:color/transparent" android:longClickable="true" android:stackFromBottom="true" android:transcriptMode="alwaysScroll"/>
+
+
+
+
+
+
+
+</LinearLayout>

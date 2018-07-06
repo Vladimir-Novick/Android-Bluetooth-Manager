@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+
+ <PreferenceCategory
+    android:title="@string/pref_device_info_title" 
+ > 
+
+
+        <EditTextPreference android:key="prefDeviceName"
+           android:title="@string/pref_device_name"
+        
+           android:summary="Please enter your device name"
+          />
+        
+        		    <ListPreference 
+		        android:key="pref_discoverable_time"
+		        android:title="@string/pref_discoverable_time_title"
+		        android:summary=""
+		         android:entries="@array/pref_discoverable_time_entries"
+                android:entryValues="@array/pref_discoverable_time_values"
+		        android:defaultValue="300"
+		        />
+        
+        
+</PreferenceCategory>
+   
+
+
+</PreferenceScreen>

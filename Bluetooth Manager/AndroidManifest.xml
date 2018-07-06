@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sgcombo.bluetooth.manager"
+    android:versionCode="3"
+    android:versionName="1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />  
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sgcombo.bluetooth.manager.TestDeviceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"  >
+            
+        </activity>
+        
+         <activity
+            android:name="com.sgcombo.bluetooth.manager.NewDeviceListActivity"
+            android:label="@string/select_new_device"
+            android:screenOrientation="portrait"  >
+            
+        </activity>
+        
+                 <activity android:name=".DeviceListActivity"
+                  android:label="@string/select_device"
+                  android:theme="@style/ThemeSelector"
+                  android:configChanges="orientation|keyboardHidden" />
+                 
+                          <activity
+            android:name="com.sgcombo.bluetooth.manager.SettingsActivity" android:theme="@style/PreferenceScreenStyle" />
+         
+         
+        <activity
+            android:name="com.sgcombo.bluetooth.manager.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
