@@ -4,7 +4,7 @@ import android.os.Build;
 /*
 Copyright (C) 2012 by Vladimir Novick http://www.linkedin.com/in/vladimirnovick , 
 
-    vlad.novick@gmail.com
+     vlad.novick@gmail.com , http://www.sgcombo.com , https://github.com/Vladimir-Novick
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
